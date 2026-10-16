@@ -260,7 +260,8 @@ button.cover:hover .i-play,button.cover:focus-visible .i-play,button.cover.on .i
 /* FOOTER */
 footer{border-top:1px solid var(--line);padding-block:36px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between}
-footer img{height:22px;width:auto}
+footer .foot-emblem img{height:56px;width:56px;filter:drop-shadow(0 0 16px rgba(214,178,94,.35));transition:filter .3s}
+footer .foot-emblem:hover img{filter:drop-shadow(0 0 24px rgba(244,220,151,.6))}
 footer nav{display:flex;flex-wrap:wrap;gap:22px}
 footer a,footer p{font:600 12px/1.4 var(--label);letter-spacing:.18em;text-transform:uppercase;color:var(--mute);text-decoration:none}
 footer a:hover{color:var(--fg)}
@@ -409,7 +410,7 @@ body{padding-bottom:calc(112px + env(safe-area-inset-bottom,0px))}
       <figure class="card has-acts"><img src="img/doctor-odyssey.jpg" alt="Doctor Odyssey poster"><div class="card-acts"><button class="act" type="button" data-play="sh-boom" aria-label="Play the song"><span class="i-play" aria-hidden="true"></span>Play song</button></div><figcaption><span class="tag">Promos</span><strong>Doctor Odyssey</strong><small>ABC</small><span class="trk">&ldquo;Sh-Boom&rdquo;</span></figcaption></figure>
       <figure class="card has-acts"><img src="img/the-bachelor.jpg" alt="The Bachelor poster"><div class="card-acts"><button class="act" type="button" data-play="sea-of-love" aria-label="Play the song"><span class="i-play" aria-hidden="true"></span>Play song</button></div><figcaption><span class="tag">In Show</span><strong>The Bachelor</strong><small>ABC</small><span class="trk">&ldquo;Sea of Love&rdquo;</span></figcaption></figure>
       <figure class="card has-acts"><img src="img/fantasy-island.jpg" alt="Fantasy Island poster"><div class="card-acts"><button class="act" type="button" data-video="yt:Yvc1USis5RU" aria-label="Watch the trailer"><span class="i-film" aria-hidden="true"></span>Watch trailer</button><button class="act" type="button" data-play="sh-boom" aria-label="Play the song"><span class="i-play" aria-hidden="true"></span>Play song</button></div><figcaption><span class="tag">Trailer</span><strong>Fantasy Island</strong><small>Sony Pictures</small><span class="trk">&ldquo;Sh-Boom&rdquo;</span></figcaption></figure>
-      <figure class="card slate logo has-acts"><img class="net-logo" src="img/espn.svg" alt="ESPN"><div class="card-acts"><button class="act" type="button" data-play="feel-good-inc" aria-label="Play the song"><span class="i-play" aria-hidden="true"></span>Play song</button></div><figcaption><span class="tag">Promo</span><strong>F1 Racing</strong><small>ESPN</small><span class="trk">&ldquo;Feel Good Inc.&rdquo;</span></figcaption></figure>
+      <figure class="card slate logo has-acts"><img class="net-logo" src="img/f1.svg" alt="Formula 1"><div class="card-acts"><button class="act" type="button" data-play="feel-good-inc" aria-label="Play the song"><span class="i-play" aria-hidden="true"></span>Play song</button></div><figcaption><span class="tag">Promo</span><strong>F1 Racing</strong><small>ESPN</small><span class="trk">&ldquo;Feel Good Inc.&rdquo;</span></figcaption></figure>
       <figure class="card has-acts"><img src="img/big-sky.jpg" alt="Big Sky poster"><div class="card-acts"><button class="act" type="button" data-video="yt:kctllffgbsU" aria-label="Watch the trailer"><span class="i-film" aria-hidden="true"></span>Watch trailer</button><button class="act" type="button" data-play="sh-boom" aria-label="Play the song"><span class="i-play" aria-hidden="true"></span>Play song</button></div><figcaption><span class="tag">S1 Promo</span><strong>Big Sky</strong><small>ABC</small><span class="trk">&ldquo;Sh-Boom&rdquo;</span></figcaption></figure>
       <figure class="card slate logo has-acts"><img class="net-logo" src="img/espn.svg" alt="ESPN"><div class="card-acts"><button class="act" type="button" data-video="yt:ekZYfIqxNpw" aria-label="Watch the promo"><span class="i-film" aria-hidden="true"></span>Watch promo</button><button class="act" type="button" data-play="the-best" aria-label="Play the song"><span class="i-play" aria-hidden="true"></span>Play song</button></div><figcaption><span class="tag">Promo</span><strong>NCAA on ESPN</strong><small>ESPN &middot; ACC Network</small><span class="trk">&ldquo;The Best&rdquo;</span></figcaption></figure>
       <figure class="card has-acts"><img src="img/the-handmaid-s-tale.jpg" alt="The Handmaid's Tale poster"><div class="card-acts"><button class="act" type="button" data-video="yt:dVLiDETfx1c" aria-label="Watch the trailer"><span class="i-film" aria-hidden="true"></span>Watch trailer</button><button class="act" type="button" data-play="pure-as-snow" aria-label="Play the song"><span class="i-play" aria-hidden="true"></span>Play song</button></div><figcaption><span class="tag">S1 Trailer</span><strong>The Handmaid&rsquo;s Tale</strong><small>Hulu</small><span class="trk">&ldquo;Pure As Snow (Mike Raznick Remix)&rdquo;</span></figcaption></figure>
@@ -659,13 +660,13 @@ body{padding-bottom:calc(112px + env(safe-area-inset-bottom,0px))}
 
 <footer>
   <div class="wrap">
-    <img src="img/logo.png" alt="Collaborate Music Productions" width="123" height="22">
+    <a class="foot-emblem" href="#top" aria-label="Collaborate Music Productions, back to top"><img src="img/emblem.png" alt="Collaborate Music Productions" width="56" height="56"></a>
     <nav aria-label="Social">
       <a href="https://www.instagram.com/soundbreakers" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/collaboratemusic" target="_blank" rel="noopener">Facebook</a>
       <a href="https://collaborate-music-productions.disco.ac/lib/6311" target="_blank" rel="noopener">DISCO Catalog</a>
     </nav>
-    <p>Est. 2015 &middot; Los Angeles, CA &middot; &copy; <span id="yr">2026</span> Collaborate Music Productions</p>
+    <p>Est. 2015 &middot; Los Angeles, CA &middot; &copy; <span id="yr">2026</span> Collaborate Music Productions Inc.</p>
   </div>
 </footer>
 
